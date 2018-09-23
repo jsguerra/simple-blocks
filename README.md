@@ -1,2 +1,2 @@
-# simple-blocks
-A WordPress child theme for Atomic Blocks
+# Simple Blocks
+> A WordPress child theme for Atomic Blocks
