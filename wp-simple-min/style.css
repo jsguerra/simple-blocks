@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Simple Blocks Child Theme
 Theme URI: https://github.com/jsguerra/simple-blocks
 Author: Jose Guerra
@@ -12,3 +12,7 @@ Tags: one-column, featured-images, theme-options, custom-background, custom-colo
 
 (C) 2018 Array, Inc.
 */
+a:hover {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
