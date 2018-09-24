@@ -37,7 +37,7 @@
 
 			<?php
             // Get the content
-            if ( is_home() ) {
+            if ( is_home() || is_category() || is_archive() ) {
                 the_excerpt();
             } else {
                 the_content( esc_html__( 'Read More', 'atomic-blocks' ) );
