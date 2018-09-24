@@ -14,9 +14,9 @@ Tags: one-column, featured-images, theme-options, custom-background, custom-colo
 */
 
 // Elements
-a {
+.entry-header .entry-title a {
   
   &:hover {
-    text-decoration: none;
+    box-shadow: none;
   }
 }
