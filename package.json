@@ -1,0 +1,25 @@
+{
+  "name": "simple-blocks",
+  "version": "1.0.0",
+  "description": "A WordPress child theme for Atomic Blocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsguerra/simple-blocks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsguerra/simple-blocks/issues"
+  },
+  "homepage": "https://github.com/jsguerra/simple-blocks#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
