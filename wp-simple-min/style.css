@@ -12,7 +12,8 @@ Tags: one-column, featured-images, theme-options, custom-background, custom-colo
 
 (C) 2018 Array, Inc.
 */
+body:not(.home) .site-identity {
+  padding: 1% 0; }
+
 .entry-header .entry-title a:hover {
   box-shadow: none; }
-
-/*# sourceMappingURL=style.css.map */

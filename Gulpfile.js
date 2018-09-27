@@ -1,9 +1,13 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    prefix = require('autoprefixer');
+    sass = require('gulp-sass');
 
-gulp.task('default', function () {
-  sass('wp-simple-min/sass/style.scss', {style: 'compact'})
-    .pipe(prefix('last 2 versions', '> 1%'))
-    .pipe(gulp.dest('/'));
+gulp.task('styles', function() {
+  gulp.src('wp-simple-min/sass/**/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('./wp-simple-min/'))
+});
+
+//Watch task
+gulp.task('default',function() {
+  gulp.watch('wp-simple-min/sass/**/*.scss',['styles']);
 });
