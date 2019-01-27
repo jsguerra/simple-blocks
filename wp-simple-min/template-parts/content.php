@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('has-wide-image'); ?>>
 	<div class="post-content">
 
 		<header class="entry-header">
