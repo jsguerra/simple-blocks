@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready(function(){e(".with-featured-image .featured-image img").length&&e(".with-featured-image").addClass("has-wide-image")})}(jQuery);
