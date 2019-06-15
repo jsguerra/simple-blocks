@@ -1,6 +1,6 @@
 /*!
-Theme Name: Simple Blocks Child Theme
-Theme URI: https://github.com/jsguerra/simple-blocks
+Theme Name: Subatomic Blocks Child Theme
+Theme URI: https://github.com/jsguerra/subatomic-blocks
 Author: Jose Guerra
 Author URI: https://joseguerra.uk/
 Description: A beautifully-simple yet powerful WordPress theme that integrates perfectly with the new Gutenberg editor and the Atomic Blocks plugin.
@@ -11,9 +11,5 @@ Domain Path: /languages/
 Tags: one-column, featured-images, theme-options, custom-background, custom-colors, custom-menu, editor-style, translation-ready, footer-widgets, full-width-template, blog
 
 (C) 2018 Array, Inc.
-*/
-body:not(.home) .site-identity {
-  padding: 1% 0; }
-
-.entry-header .entry-title a:hover {
-  box-shadow: none; }
+*/body:not(.home) .site-identity{padding:1% 0}.entry-header .entry-title a:hover{-webkit-box-shadow:none;box-shadow:none}
+/*# sourceMappingURL=../subatomic-blocks/sass/maps/style.css.map */
