@@ -1,0 +1,11 @@
+body:not(.home) .site-identity {
+  padding: 1% 0;
+}
+
+// Elements
+.entry-header .entry-title a {
+  
+  &:hover {
+    box-shadow: none;
+  }
+}
