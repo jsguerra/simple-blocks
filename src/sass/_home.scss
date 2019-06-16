@@ -1,0 +1,35 @@
+// Homepage Styles
+// =========================
+.home {
+
+  #primary {
+    width: 100%;
+  }
+
+  #post-wrap {
+
+    @include breakpoint($mobile-600) {
+      column-count: 2;
+      column-gap: 20px;
+    }
+
+    @include breakpoint($tablet-900) {
+      column-count: 3;
+      column-gap: 40px;
+    }
+  }
+
+  article {
+    font-size: 80%;
+
+    .featured-image {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    .entry-title {
+      font-size: 25px;
+    }
+  }
+}
