@@ -9,6 +9,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('has-wide-image'); ?>>
 	<div class="post-content">
 
+    <?php if ( is_home() && has_post_thumbnail() ) { ?>
+      <figure class="featured-image">
+        <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'atomic-blocks-featured-image' ); ?></a>
+      </figure>
+    <?php } elseif ( is_home() && !has_post_thumbnail() ) { ?>
+      <figure class="featured-image">
+        <a href="<?php the_permalink(); ?>" rel="bookmark">
+          <img width="1200" height="800" src="<?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default.jpg" class="wp-post-image" alt="<?php the_title(); ?>" srcset="<?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default-1200x800.jpg 1200w, <?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default-300x200.jpg 300w, <?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default-768x512.jpg 768w, <?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default-1024x683.jpg 1024w, <?php bloginfo('stylesheet_directory'); ?>/images/theodoris-katis-default-1400x933.jpg 1400w" sizes="(max-width: 1200px) 100vw, 1200px" />
+        </a>
+      </figure>
+    <?php } ?>
+
 		<header class="entry-header">
 			<?php if( is_single() ) { ?>	
 				<h1 class="entry-title">
@@ -22,16 +34,12 @@
 			
 			<?php atomic_blocks_post_byline(); ?>
 		</header>
-		
-		<?php if ( has_post_thumbnail() ) { ?>
-			<div class="featured-image">
-				<?php if ( is_home() ) { ?>
-					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'atomic-blocks-featured-image' ); ?></a>
-				<?php } else { ?>
-					<?php the_post_thumbnail( 'atomic-blocks-featured-image' ); ?>
-				<?php } ?>
-			</div>
-		<?php } ?>
+
+    <?php if ( has_post_thumbnail() && !is_home() ) { ?>
+      <figure class="featured-image">
+        <?php the_post_thumbnail( 'atomic-blocks-featured-image' ); ?>
+      </figure>
+    <?php } ?>
 
 		<div class="entry-content">
 
