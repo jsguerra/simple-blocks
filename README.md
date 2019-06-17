@@ -3,4 +3,4 @@
 
 This is a minimal update to the Atomic Blocks WordPress parent theme.
 
-Live site with theme: https://josetreks.com
+**Live site** with theme: https://josetreks.com
