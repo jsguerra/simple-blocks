@@ -62,7 +62,12 @@
 	        	get_template_part( 'template-parts/content-meta' );
 
 				// Author profile box
-				atomic_blocks_author_box();
+        atomic_blocks_author_box();
+        
+        // Add Jetpack Related Posts
+        if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+          echo do_shortcode( '[jetpack-related-posts]' );
+        }
 
 				// Post navigations
 				if( is_single() ) {
