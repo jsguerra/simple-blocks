@@ -9,10 +9,10 @@
 function atomic_blocks_parent_theme_style() {
 
 	// Parent theme styles
-	wp_enqueue_style( 'atomic-blocks-style', get_template_directory_uri(). '/style.css' );
+	wp_enqueue_style( 'atomic-blocks-style', get_template_directory_uri() . '/style.css' );
 
-	// Child theme styles
-  wp_enqueue_style( 'atomic-blocks-child-style', get_stylesheet_directory_uri(). '/style.css', '', '1560836273' );
+  // Child theme styles
+  wp_enqueue_style( 'atomic-blocks-child-style', get_stylesheet_directory_uri() . '/style.css', array(), '1560836273');
   
   // Child theme js
   wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/main.min.js', array ( 'jquery' ), 1.1, true);
