@@ -6,18 +6,20 @@
 /**
  * Load the parent and child theme styles
  */
-function atomic_blocks_parent_theme_style() {
+function subatomic_blocks_scripts() {
+  $theme   = wp_get_theme();
+	$version = $theme->get( 'Version' );
 
 	// Parent theme styles
 	wp_enqueue_style( 'atomic-blocks-style', get_template_directory_uri() . '/style.css' );
 
   // Child theme styles
-  wp_enqueue_style( 'atomic-blocks-child-style', get_stylesheet_directory_uri() . '/style.css', array(), '1560836273');
+  wp_enqueue_style( 'subatomic-blocks-style', get_stylesheet_directory_uri() . '/style.css', array(), $version );
   
   // Child theme js
   wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/main.min.js', array ( 'jquery' ), 1.1, true);
 }
-add_action( 'wp_enqueue_scripts', 'atomic_blocks_parent_theme_style' );
+add_action( 'wp_enqueue_scripts', 'subatomic_blocks_scripts' );
 
 // Override the Byline
 function atomic_blocks_post_byline() { ?>
